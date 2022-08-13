@@ -37,7 +37,6 @@ export class MovieController {
         'application/json': {
           schema: getModelSchemaRef(Movie, {
             title: 'NewMovie',
-
           }),
         },
       },

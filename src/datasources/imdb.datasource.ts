@@ -2,15 +2,15 @@ import { inject, lifeCycleObserver, LifeCycleObserver } from '@loopback/core';
 import { juggler } from '@loopback/repository';
 import { CONST } from '../sensitive-data';
 
-const config = {
-  name: 'imdb',
-  connector: 'mongodb',
+const config: object = {
+  name: "imdb",
+  connector: CONST.MONGODB_CONNECTOR,
   url: CONST.MONGODB_CONNECTION_STR,
   host: CONST.MONGODB_HOST,
   port: CONST.MONGODB_PORT,
   user: CONST.MONGODB_USER,
   password: CONST.MONGODB_PW,
-  database: 'Movie_Collection',
+  database: CONST.MONGODB_DATABASE,
   useNewUrlParser: true
 };
 
@@ -21,13 +21,10 @@ const config = {
 @lifeCycleObserver('datasource')
 export class ImdbDataSource extends juggler.DataSource
   implements LifeCycleObserver {
-  static dataSourceName = 'imdb';
+  static dataSourceName = "imdb";
   static readonly defaultConfig = config;
 
-  constructor(
-    @inject('datasources.config.imdb', { optional: true })
-    dsConfig: object = config,
-  ) {
+  constructor(@inject('datasources.config.imdb', { optional: true }) dsConfig: object = config) {
     super(dsConfig);
   }
 }

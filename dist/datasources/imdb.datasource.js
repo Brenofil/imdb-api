@@ -6,14 +6,14 @@ const core_1 = require("@loopback/core");
 const repository_1 = require("@loopback/repository");
 const sensitive_data_1 = require("../sensitive-data");
 const config = {
-    name: 'imdb',
-    connector: 'mongodb',
+    name: "imdb",
+    connector: sensitive_data_1.CONST.MONGODB_CONNECTOR,
     url: sensitive_data_1.CONST.MONGODB_CONNECTION_STR,
     host: sensitive_data_1.CONST.MONGODB_HOST,
     port: sensitive_data_1.CONST.MONGODB_PORT,
     user: sensitive_data_1.CONST.MONGODB_USER,
     password: sensitive_data_1.CONST.MONGODB_PW,
-    database: 'Movie_Collection',
+    database: sensitive_data_1.CONST.MONGODB_DATABASE,
     useNewUrlParser: true
 };
 // Observe application's life cycle to disconnect the datasource when
@@ -25,7 +25,7 @@ let ImdbDataSource = class ImdbDataSource extends repository_1.juggler.DataSourc
         super(dsConfig);
     }
 };
-ImdbDataSource.dataSourceName = 'imdb';
+ImdbDataSource.dataSourceName = "imdb";
 ImdbDataSource.defaultConfig = config;
 ImdbDataSource = tslib_1.__decorate([
     (0, core_1.lifeCycleObserver)('datasource'),

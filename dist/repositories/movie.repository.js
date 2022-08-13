@@ -12,7 +12,7 @@ let MovieRepository = class MovieRepository extends repository_1.DefaultCrudRepo
     }
 };
 MovieRepository = tslib_1.__decorate([
-    tslib_1.__param(0, (0, core_1.inject)('datasources.imdb-collection')),
+    tslib_1.__param(0, (0, core_1.inject)('datasources.imdb')),
     tslib_1.__metadata("design:paramtypes", [datasources_1.ImdbDataSource])
 ], MovieRepository);
 exports.MovieRepository = MovieRepository;

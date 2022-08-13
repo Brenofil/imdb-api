@@ -22,92 +22,112 @@ tslib_1.__decorate([
         required: true,
     }),
     tslib_1.__metadata("design:type", String)
-], Movie.prototype, "poster_link", void 0);
+], Movie.prototype, "Poster_link", void 0);
 tslib_1.__decorate([
     (0, repository_1.property)({
         type: 'string',
         required: true,
     }),
     tslib_1.__metadata("design:type", String)
-], Movie.prototype, "series_title", void 0);
+], Movie.prototype, "Series_title", void 0);
 tslib_1.__decorate([
     (0, repository_1.property)({
         type: 'number',
         required: true,
     }),
     tslib_1.__metadata("design:type", Number)
-], Movie.prototype, "released_year", void 0);
+], Movie.prototype, "Released_year", void 0);
 tslib_1.__decorate([
     (0, repository_1.property)({
         type: 'string',
         required: true,
     }),
     tslib_1.__metadata("design:type", String)
-], Movie.prototype, "certificate", void 0);
+], Movie.prototype, "Certificate", void 0);
 tslib_1.__decorate([
     (0, repository_1.property)({
         type: 'string',
         required: true,
     }),
     tslib_1.__metadata("design:type", String)
-], Movie.prototype, "runtime", void 0);
+], Movie.prototype, "Runtime", void 0);
 tslib_1.__decorate([
     (0, repository_1.property)({
         type: 'string',
         required: true,
     }),
     tslib_1.__metadata("design:type", String)
-], Movie.prototype, "genre", void 0);
+], Movie.prototype, "Genre", void 0);
 tslib_1.__decorate([
     (0, repository_1.property)({
         type: 'number',
         required: true,
     }),
     tslib_1.__metadata("design:type", Number)
-], Movie.prototype, "imdb_rating", void 0);
+], Movie.prototype, "IMDB_Rating", void 0);
 tslib_1.__decorate([
     (0, repository_1.property)({
         type: 'string',
         required: true,
     }),
     tslib_1.__metadata("design:type", String)
-], Movie.prototype, "overview", void 0);
+], Movie.prototype, "Overview", void 0);
 tslib_1.__decorate([
     (0, repository_1.property)({
         type: 'number',
         required: true,
     }),
     tslib_1.__metadata("design:type", Number)
-], Movie.prototype, "meta_score", void 0);
+], Movie.prototype, "Meta_score", void 0);
 tslib_1.__decorate([
     (0, repository_1.property)({
         type: 'string',
         required: true,
     }),
     tslib_1.__metadata("design:type", String)
-], Movie.prototype, "director", void 0);
+], Movie.prototype, "Director", void 0);
 tslib_1.__decorate([
     (0, repository_1.property)({
-        type: 'array',
-        itemType: 'string',
+        type: 'string',
         required: true,
     }),
     tslib_1.__metadata("design:type", Array)
-], Movie.prototype, "stars", void 0);
+], Movie.prototype, "Star1", void 0);
+tslib_1.__decorate([
+    (0, repository_1.property)({
+        type: 'string',
+        required: true,
+    }),
+    tslib_1.__metadata("design:type", Array)
+], Movie.prototype, "Star2", void 0);
+tslib_1.__decorate([
+    (0, repository_1.property)({
+        type: 'string',
+        required: true,
+    }),
+    tslib_1.__metadata("design:type", Array)
+], Movie.prototype, "Star3", void 0);
+tslib_1.__decorate([
+    (0, repository_1.property)({
+        type: 'string',
+        required: true,
+    }),
+    tslib_1.__metadata("design:type", Array)
+], Movie.prototype, "Star4", void 0);
 tslib_1.__decorate([
     (0, repository_1.property)({
         type: 'number',
         required: true,
     }),
     tslib_1.__metadata("design:type", Number)
-], Movie.prototype, "number_of_votes", void 0);
+], Movie.prototype, "No_of_Votes", void 0);
 tslib_1.__decorate([
     (0, repository_1.property)({
         type: 'string',
         required: true,
     }),
     tslib_1.__metadata("design:type", String)
-], Movie.prototype, "gross", void 0);
+], Movie.prototype, "Gross", void 0);
 Movie = tslib_1.__decorate([
     (0, repository_1.model)(),
     tslib_1.__metadata("design:paramtypes", [Object])

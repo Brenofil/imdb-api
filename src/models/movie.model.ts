@@ -13,80 +13,97 @@ export class Movie extends Entity {
     type: 'string',
     required: true,
   })
-  poster_link: string;
+  Poster_link: string;
 
   @property({
     type: 'string',
     required: true,
   })
-  series_title: string;
+  Series_title: string;
 
   @property({
     type: 'number',
     required: true,
   })
-  released_year: number;
+  Released_year: number;
 
   @property({
     type: 'string',
     required: true,
   })
-  certificate: string;
+  Certificate: string;
 
   @property({
     type: 'string',
     required: true,
   })
-  runtime: string;
+  Runtime: string;
 
   @property({
     type: 'string',
     required: true,
   })
-  genre: string;
+  Genre: string;
 
   @property({
     type: 'number',
     required: true,
   })
-  imdb_rating: number;
+  IMDB_Rating: number;
 
   @property({
     type: 'string',
     required: true,
   })
-  overview: string;
+  Overview: string;
 
   @property({
     type: 'number',
     required: true,
   })
-  meta_score: number;
+  Meta_score: number;
 
   @property({
     type: 'string',
     required: true,
   })
-  director: string;
+  Director: string;
 
   @property({
-    type: 'array',
-    itemType: 'string',
+    type: 'string',
     required: true,
   })
-  stars: string[];
+  Star1: string[];
+
+  @property({
+    type: 'string',
+    required: true,
+  })
+  Star2: string[];
+
+  @property({
+    type: 'string',
+    required: true,
+  })
+  Star3: string[];
+
+  @property({
+    type: 'string',
+    required: true,
+  })
+  Star4: string[];
 
   @property({
     type: 'number',
     required: true,
   })
-  number_of_votes: number;
+  No_of_Votes: number;
 
   @property({
     type: 'string',
     required: true,
   })
-  gross: string;
+  Gross: string;
 
 
   constructor(data?: Partial<Movie>) {
