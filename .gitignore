@@ -1,2 +1,7 @@
+
+# NODE_MODULES #
 node_modules
+
+# COMMON #
 sensitive-data
+__tests__
